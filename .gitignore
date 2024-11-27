@@ -1,0 +1,12 @@
+# Node.js 관련
+node_modules/
+dist/
+
+# 환경 변수
+.env
+
+# MacOS 관련
+.DS_Store
+
+# 로그 파일
+*.log
