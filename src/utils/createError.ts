@@ -1,4 +1,6 @@
-export const createError = (message: string, statusCode: number = 500) => ({
-  message,
-  statusCode,
-});
+export const createError = (message: string, statusCode: number) => {
+  return {
+    message,
+    statusCode,
+  };
+};
