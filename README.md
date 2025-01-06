@@ -5,6 +5,7 @@ src/
 │   ├── authRoutes.ts       #인증&인가 관련 라우터
 │		└── index.ts            #라우터 분류류 
 ├──2.middlewares/
+│   ├── errorHandler.ts     #APP내 에러 처리 미들웨어
 │		└── logger.ts           #로깅 미들웨어 
 ├──3.Controller/
 │   ├── userController.ts   #샘플용 유저 리스트 반환
@@ -15,6 +16,8 @@ src/
 │		└── getUserPassword.ts  #DB조회 
 ├──6.config/
 │		└── index.ts            #환경변수(ex 서버포트)
+├──7.utils/
+│		└── createError.ts      #클라이언트에게 전달할 에러 리턴
 └──index.ts
 
 
