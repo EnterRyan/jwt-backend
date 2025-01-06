@@ -6,4 +6,5 @@ export const getUsers = (req: Request, res: Response) => {
         { id: 1, name: 'John Doe' },
         { id: 2, name: 'Jane Doe' },
     ]);
+    
 };

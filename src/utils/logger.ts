@@ -4,7 +4,7 @@ const { combine, timestamp, printf, colorize } = format;
 
 // 로그 출력 포맷
 const logFormat = printf(({ level, message, timestamp }) => {
-  return `${timestamp} [${level}]: ${message}`;
+  return `${timestamp} | [${level}]: ${message}`;
 });
 
 // Winston 로거 생성
@@ -20,8 +20,8 @@ const logger = createLogger({
           format: combine(colorize(), logFormat),
       }),
       // 파일에 로그 저장
-      new transports.File({ filename: 'logs/app.log' }),
+      new transports.File({ filename: 'src/logs/app.log' }),
   ],
 });
 
-export default logger;
+export default logger ;
