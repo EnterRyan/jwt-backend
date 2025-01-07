@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { loginService } from "../services/loginService";
+import { loginService } from "../services/auth/loginService";
 import { InstanceError, LoginRequestBody } from "./types";
 import logger from "../utils/logger";
 

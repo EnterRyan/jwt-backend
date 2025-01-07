@@ -1,7 +1,7 @@
 import bcrypt from "bcrypt";
-import { getUserPassword } from "../models/getUserPassword";
-import { createError } from "../utils/createError";
-import logger from "../utils/logger";
+import { getUserPassword } from "../../models/getUserPassword";
+import { createError } from "../../utils/createError";
+import logger from "../../utils/logger";
 
 export const loginService = async (userId:string, userPw:string) =>{
   const hashPw = await getUserPassword(userId);
