@@ -16,6 +16,6 @@ export const loginService = async (userId:string, userPw:string) =>{
   } 
   else {
     logger.info("Cannot find User");
-    throw createError("Cannot find User", 402);
+    throw createError("Cannot find User", 401);
   }
 }
