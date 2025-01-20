@@ -4,7 +4,6 @@ import authRouter from './authRouter';
 import logger from '../utils/logger';
 
 const router = Router();
-logger.info("Router in")
 // 유저 관련 라우터 연결
 router.use('/users', userRoutes);
 
